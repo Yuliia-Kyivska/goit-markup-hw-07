@@ -21,29 +21,33 @@
 
   <body>
     <!--шапка сайта-->
+    <body data-page>
+    <!--шапка сайта-->
     <header class="header">
-      <div class="container header-container">
+      <div class="container header__container">
         <nav class="nav">
-          <a href="index.html" class="logo">Web<span class="dark-logo">Studio</span></a>
+          <a href="index.html" class="logo nav__logo"
+            >Web<span class="nav__logo nav__logo--dark">Studio</span></a
+          >
 
-          <ul class="nav-list list">
-            <li>
-              <a href="index.html" class="nav-link link">Студия</a>
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link link">Студия</a>
             </li>
 
-            <li class="nav-item">
-              <a href="portfolio.html" class="active-page nav-link link">Портфолио</a>
+            <li class="nav__item"> 
+              <a href="portfolio.html" class="nav__link--active nav__link link">Портфолио</a>
             </li>
-            <li>
-              <a href="" class="nav-link link">Контакты</a>
+            <li class="nav__item"> 
+              <a href="" class="nav__link link">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <!--contakts-->
-        <ul class="contact-list list">
+        <!--contacts-->
+        <ul class="contact list">
           <li>
-            <a href="mailto:info@devstudio.com" class="contact-link link">
+            <a href="mailto:info@devstudio.com" class="contact__link link">
               <svg class="mail-icon icon" width="16px" height="12px">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
@@ -51,15 +55,17 @@
             >
           </li>
           <li>
-            <a href="tel:+380961111111" class="contact-link link"
-              ><svg class="tel-icon icon" width="10px" height="16px">
-                <use href="./images/icons.svg#telephone"></use></svg
-              >+38 096 111 11 11</a
-            >
+            <a href="tel:+380961111111" class="contact__link link">
+              <svg class="tel-icon icon" width="10px" height="16px">
+                <use href="./images/icons.svg#telephone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
     </header>
+
 
     <main>
       <section class="section">
@@ -312,34 +318,34 @@
           <div class="footer-social">
             <p class="subscribe-title">присоединяйтесь</p>
 
-            <ul class="list social-list">
-              <li class="social-item">
-                <a href="javascript:;" target="_blank" class="link social-link-icon">
-                  <svg class="social-icon" width="20px" height="20px">
+           <ul class="list social-list">
+              <li class="social-list__item">
+                <a href="javascript:;" target="_blank" class="link social-list__link">
+                  <svg class="social-list__icon" width="20px" height="20px">
                     <use href="./images/icons.svg#instagram-icon"></use>
                   </svg>
                 </a>
               </li>
 
-              <li class="social-item">
-                <a href="javascript:;" target="_blank" class="link social-link-icon">
-                  <svg class="social-icon" width="20px" height="20px">
+              <li class="social-list__item">
+                <a href="javascript:;" target="_blank" class="link social-list__link">
+                  <svg class="social-list__icon" width="20px" height="20px">
                     <use href="./images/icons.svg#twitter-icon"></use>
                   </svg>
                 </a>
               </li>
 
-              <li class="social-item">
-                <a href="javascript:;" target="_blank" class="link social-link-icon">
-                  <svg class="social-icon" width="20px" height="20px">
+              <li class="social-list__item">
+                <a href="javascript:;" target="_blank" class="link social-list__link">
+                  <svg class="social-list__icon" width="20px" height="20px">
                     <use href="./images/icons.svg#facebook-icon"></use>
                   </svg>
                 </a>
               </li>
 
-              <li class="social-item">
-                <a href="javascript:;" target="_blank" class="link social-link-icon">
-                  <svg class="social-icon" width="20px" height="20px">
+              <li class="social-list__item">
+                <a href="javascript:;" target="_blank" class="link social-list__link">
+                  <svg class="social-list__icon" width="20px" height="20px">
                     <use href="./images/icons.svg#linkedin-icon"></use>
                   </svg>
                 </a>
@@ -350,7 +356,6 @@
             <p class="subscribe-title">Подпишитесь на рассылку</p>
 
             <form class="footer-submit-form">
-            
               <input
                 class="footer-submit-input"
                 type="email"
@@ -361,18 +366,15 @@
               />
 
               <button type="submit" class="hero-button">
-                
-             <span class="span-subscribe"> Подписаться</span>
-                  <svg class="social-icon" width="24px" height="24px">
-                    <use href="./images/icons.svg#footer-send"></use>
-                  </svg>
-               
+                <span class="span-subscribe"> Подписаться</span>
+                <svg class="social-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#footer-send"></use>
+                </svg>
               </button>
             </form>
           </div>
         </div>
       </div>
     </footer>
-
   </body>
 </html>
