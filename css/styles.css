@@ -9,7 +9,7 @@
 /*цвет кнопки неактивной в портфолио #F5F4FA */
 /*цвет данных в футере rgba(255, 255, 255, 0.6) */
 
-:root {
+/*:root {
   --background-dark-grey: #2f303a;
   --grey-color: #757575;
   --blue-logo-color: #2196f3;
@@ -39,7 +39,11 @@
   --bt-submit-footer: rgba(0, 0, 0, 0.15);
   --brinput: rgba(33, 33, 33, 0.2);
   --txtplc: rgba(117, 117, 117, 0.5);
-}
+  --bord-input:rgba(255, 255, 255, 0.3);
+  --filtr-imput:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}*/
+
+
 h1,
 h2,
 h3,
@@ -704,8 +708,8 @@ form.footer-submit-form{
 
   font-size: 16px;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border: 1px solid var(--bord-input);
+  filter: var(--filtr-imput);
   border-radius: 4px;
 }
 
@@ -782,7 +786,7 @@ form.footer-submit-form{
 
 .form-input:focus-within + .form-icon, 
 .form-input:hover + .form-icon {
-  fill: #2196f3;  
+  fill: var(--blue-logo-color);  
 }
 
 
