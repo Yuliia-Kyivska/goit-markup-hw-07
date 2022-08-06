@@ -17,8 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
 
   <!--body сайта-->
@@ -27,9 +26,7 @@
     <header class="header">
       <div class="container header__container">
         <nav class="nav">
-          <a href="index.html" class="logo nav__logo"
-            >Web<span class="nav__logo nav__logo--dark">Studio</span></a
-          >
+          <a href="index.html" class="logo nav__logo">Web<span class="dark-logo">Studio</span></a>
 
           <ul class="nav__list list">
             <li class="nav__item">
@@ -441,7 +438,7 @@
           </div>
 
           <div class="footer-social">
-            <p class="subscribe-title">присоединяйтесь</p>
+            <p class="footer-title">присоединяйтесь</p>
 
             <ul class="list social-list">
               <li class="social-list__item">
@@ -477,12 +474,13 @@
               </li>
             </ul>
           </div>
-          <div class="footer-submit">
-            <p class="subscribe-title">Подпишитесь на рассылку</p>
 
-            <form class="footer-submit-form">
+          <div class="footer-submit">
+            <p class="footer-title">Подпишитесь на рассылку</p>
+
+            <form class="footer-form">
               <input
-                class="footer-submit-input"
+                class="footer-input"
                 type="email"
                 name="email"
                 id="email-footer"
@@ -511,7 +509,7 @@
           </svg>
         </button>
 
-        <p class="hero-submit-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 
         <form class="form">
           <label for="name" class="form-label">
@@ -557,7 +555,7 @@
             </span>
           </label>
 
-          <div class="chacks">
+          <div class="checks">
             <label class="checkbox-label">
               <input
                 class="checkbox visually-hidden"
@@ -570,7 +568,7 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#" class="chackbox-link"
+              Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#" class="checkbox-link"
                 >Условия договора</a
               >
             </label>
