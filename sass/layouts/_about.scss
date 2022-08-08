@@ -3,14 +3,14 @@
 }
 
 
-.about-list {
+.about__list {
   --card-item: 3;
 
-  &__item {
+    &-item {
     position: relative;
   }
 
-  &__text {
+    &-text {
     position: absolute;
     z-index: 1;
     bottom: 0;
@@ -23,11 +23,12 @@
     background-color: $bgcolor-wdtext;
   }
 
-  &__title {
+    &-title {
     font-weight: 700;
     line-height: 1.14;
     text-align: center;
     text-transform: uppercase;
     color: $white-color;
   }
+
 }

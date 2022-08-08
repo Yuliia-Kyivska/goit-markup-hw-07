@@ -221,17 +221,6 @@ img {
   color: #212121;
 }
 
-.contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 50px;
-  margin-left: auto;
-}
-
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,8 +235,7 @@ img {
   position: relative;
 }
 
-.nav__link,
-.contact__link {
+.nav__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,8 +252,6 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact__link:hover,
-.contact__link:focus,
 .nav__link:hover,
 .nav__link:focus {
   color: #2196f3;
@@ -289,6 +275,39 @@ img {
 .icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  margin-left: auto;
+}
+
+.contact__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__link:hover,
+.contact__link:focus {
+  color: #2196f3;
 }
 
 .section-title {
@@ -353,7 +372,7 @@ img {
 }
 
 .social-list__icon {
-  fill: var(rgb(175, 177, 184));
+  fill: rgb(175, 177, 184);
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
@@ -364,6 +383,10 @@ img {
 
 .social-list__link:hover .social-list__icon,
 .social-list__link:focus .social-list__icon {
+  fill: #ffffff;
+}
+
+.footer-social .social-list__icon {
   fill: #ffffff;
 }
 
@@ -729,13 +752,13 @@ img {
   padding-top: 0;
 }
 
-.about-list {
+.about__list {
   --card-item: 3;
 }
-.about-list__item {
+.about__list-item {
   position: relative;
 }
-.about-list__text {
+.about__list-text {
   position: absolute;
   z-index: 1;
   bottom: 0;
@@ -753,7 +776,7 @@ img {
   padding: 27px;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.about-list__title {
+.about__list-title {
   font-weight: 700;
   line-height: 1.14;
   text-align: center;
@@ -794,9 +817,7 @@ img {
 }
 
 .team__content {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   padding: 30px;

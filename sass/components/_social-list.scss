@@ -27,7 +27,7 @@
 
 
 .social-list__icon {
-  fill: var($social-icon);
+  fill: $social-icon;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: $cub-bez;
@@ -35,5 +35,8 @@
 
 .social-list__link:hover .social-list__icon,
 .social-list__link:focus .social-list__icon {
+  fill: $white-color;
+}
+.footer-social .social-list__icon{
   fill: $white-color;
 }
